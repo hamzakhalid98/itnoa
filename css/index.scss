@@ -1,0 +1,279 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: Inter-Regular;
+}
+
+.slick-prev:before {
+    content: "\f104";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #fff;
+}
+   
+
+.slick-next:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-size: 20px;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../fonts/Inter-Regular.woff2);
+  }
+
+  @font-face {
+    font-family: 'Inter-Bold';
+    src: url(../fonts/Inter-Bold.woff2);
+  }
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.own-container {
+    max-width: 1056px;
+    margin: auto;
+    width: 100%;
+}
+
+$blackColor: #000000;
+$myFontSize: 18px;
+$whiteColor: #ffffff;
+$regular: Inter-Regular;
+$bold: Inter-Bold;
+$fontSize12: 12px;
+
+header {
+    height: 138px;
+}
+.top-header {
+    padding: 0px 20px;
+    background-color: $blackColor; 
+    .hd-parent {
+        padding: 15px 0px;
+        #top-hd {
+            display: flex;
+            .top-hd-inner {
+                text-align: center;
+                span {
+                    color: $whiteColor; 
+                    font-size: 13px;
+                    letter-spacing: 2px;
+                    a {
+                        color: $whiteColor; 
+                    } 
+                }
+            }
+        }
+    }
+} 
+.header-content {
+    max-width: 105rem;
+    width: 100%;
+    margin: auto;
+    padding: 0 3.75rem; 
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+    background-color: #fff;
+    z-index: 999;
+    &.fixed {
+        top: 0;
+        position: fixed;
+    }
+    .space-between { 
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    .categories {
+        ul {
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            li {
+                list-style: none;
+                a {
+                    font-size: $fontSize12;
+                    padding: 2.0625rem 0.7875rem; 
+                    display: inline-block;
+                    color: $blackColor;
+                    text-decoration: none;
+                    height: 100%;
+                    &:hover {
+                       border-bottom: 2px solid #000000;
+                    }
+                }
+                .cate-child {
+                    display: none;
+                    width: 100%;
+                    z-index: 9999;
+                    background-color: #ffffff;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    padding: 2.5rem 3.125rem;
+                    max-height: 400px;
+                    overflow-y: scroll;
+                }
+            } 
+        }
+    }
+    .btns-parent {
+        display: flex;
+        align-items: center;
+        .search {
+            padding: 2.0625rem 1.5rem;
+            img {
+                width:16px;
+            }
+        }
+        .search-sub {
+            display: none;
+            width: 100%;
+            z-index: 9999;
+            background-color: #ffffff;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 2.5rem 3.125rem;
+        }
+        .search-sub.active {
+            display: block;
+        }
+        .dotted {
+            height: 24px;
+            padding: 10px;
+            border-right: 2px dotted #000;
+        }
+        .account {
+            padding: 2.0625rem 1.5rem;
+            position: relative;
+            img {
+                width: 16px;
+            }
+            .login-btn {
+                display: none;
+                padding: 20px;
+                background-color: #000;
+                position: absolute;
+                left: -29%;
+                width: 160%;
+                top: 100%;
+                a {
+                    transition: .3s ease-in;
+                    padding: 10px;
+                    text-align: center;
+                    display: block;
+                    text-decoration: none;
+                    &:first-child {
+                        background-color: #fff;
+                        margin-bottom: 20px; 
+                        border: 2px solid #000;
+                        color: #000;
+                        &:hover {
+                            background-color: #53c563;
+                            color: #fff;
+                        }
+                    }
+                    &:last-child {
+                        border: 2px solid #fff;
+                        color: #ffffff;
+                        &:hover {
+                            background-color: #ffffff;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+            .active {
+                display: block;
+            }
+        }
+        .cart {
+            padding: 2.0625rem 0rem 2.0625rem 1.5rem;
+            img {
+                width: 16px;
+            }
+        }
+    }
+}
+.main {
+    .section-1 {
+        margin-top: 40px;
+        .sec-1 {
+            padding: 2.1875rem 3.75rem 1.5625rem;
+            background-color: rgba(127,170,199,1);
+            div {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            .up-to {
+                font-size: 20px;
+                font-family: $bold;
+                opacity: 0.5;
+            }
+            .percent {
+                font-size: 80px;
+                font-family: $bold;
+            }
+            .sale {
+                font-size: 28px;
+                font-family: $bold;
+            }
+            a {
+                padding: 12px 25px;
+                background-color: rgba(255,255,255,1);
+                display: inline-block;
+                border-radius: 4px;
+                width: 180px;
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.sec-2 {
+    position: relative;
+    img {
+        width: 100%;
+    }
+    .relative {
+        padding: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .text {
+            color: #ffffff;
+        }
+        .watch {
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 45px;
+        }
+        .watc-spec {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: 55px;
+        }
+        a {
+            padding: 12px 25px;
+            background-color: rgba(255,255,255,1);
+            display: inline-block;
+            border-radius: 4px;
+            width: 180px;
+            text-decoration: none;
+            text-align: center;
+            color: #000000;
+        }
+    }
+}
