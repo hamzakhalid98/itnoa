@@ -190,7 +190,7 @@ header {
                         color: #000;
                         &:hover {
                             background-color: #53c563;
-                            color: #fff;
+                            color: $whiteColor;
                         }
                     }
                     &:last-child {
@@ -261,7 +261,7 @@ header {
         bottom: 0;
         left: 0;
         .text {
-            color: #ffffff;
+            color: $whiteColor;
         }
         .watch {
             font-size: 42px;
@@ -300,7 +300,7 @@ header {
             margin: 5px;
             letter-spacing: 1.5px;
             font-size: 11px;
-            color: #ffffff;
+            color: $whiteColor;
         } 
     }
 }
@@ -348,7 +348,7 @@ header {
         height: 40px;
     }
     input[placeholder] {
-        color: #ffffff;
+        color: $whiteColor;
         font-style: italic;
     }
 }
