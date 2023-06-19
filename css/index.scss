@@ -100,7 +100,7 @@ header {
             height: 100%;
             li {
                 list-style: none;
-                a {
+                > a {
                     font-size: $fontSize12;
                     padding: 2.0625rem 0.7875rem; 
                     display: inline-block;
@@ -122,6 +122,11 @@ header {
                     padding: 2.5rem 3.125rem;
                     max-height: 400px;
                     overflow-y: scroll;
+                }
+                .all-categories {
+                    a {
+                        line-height: 30px; 
+                    }
                 }
             } 
         }
